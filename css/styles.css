@@ -697,7 +697,7 @@ a.menu-link.current {
   top: 50%;
   left: 50%;
   width: 408px;
-  height: 576px;
+  min-height: 576px;
   background: var(--modal-color);
   transform: translate(-50%, -50%);
 }
@@ -716,6 +716,7 @@ a.menu-link.current {
   background: var(--paragraph-color);
   border-radius: 50%;
   transition: background-color var(--timing-function);
+  transition-property: fill, pointer;
 }
 
 .modal-close-button:hover,
@@ -762,9 +763,6 @@ a.menu-link.current {
   padding-left: 38px;
   border-radius: 4px;
   transition: border-color var(--timing-function);
-  font-style: normal;
-  font-family: "Roboto";
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -772,7 +770,6 @@ a.menu-link.current {
 .modal-icon {
   position: absolute;
   top: 50%;
-  left: 0;
   transform: translate(0, -50%);
   left: 16px;
   transition: fill var(--timing-function);
@@ -833,8 +830,6 @@ a.menu-link.current {
   z-index: -1;
 }
 .agreement-text {
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
